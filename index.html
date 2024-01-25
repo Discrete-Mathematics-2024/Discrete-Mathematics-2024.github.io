@@ -13,9 +13,13 @@
         th, td { border: 1px solid black; padding: 8px; text-align: left; }
         th { background-color: #f2f2f2; }
         th, td { max-width: 100px; } /* 控制最大宽度 */
-        .centered-table { text-align: center; } /* 为居中的表格添加样式 */
-        .centered-table th, .centered-table td { border: 1px solid black; padding: 8px; }
-    </style>
+        .centered-table th, .centered-table td { 
+            border: 1px solid black; 
+            padding: 8px; 
+            text-align: center; /* 使内容居中 */
+        }
+        .teacher-column { width: 30%; } /* 为“教师”列设置宽度 */
+
     </style>
 </head>
 <body>
@@ -102,18 +106,20 @@
         <!-- 教师信息表格 -->
         <table class="centered-table">
             <tr>
-                <th>教师</th>
+                <th class="teacher-column">教师</th>
                 <th>邮箱</th>
                 <th>微信</th>
                 <th>办公室</th>
             </tr>
             <tr>
-                <td>史颖欢</td>
+                <td class="teacher-column">史颖欢</td>
                 <td>syh@nju.edu.cn</td>
                 <td>yinghuanshi</td>
                 <td>计算机系楼-508（仙林），蒙民伟楼2611（鼓楼）</td>
             </tr>
         </table>
+
+        <p></p>
 
         <!-- 助教信息表格 -->
         <table class="centered-table">
