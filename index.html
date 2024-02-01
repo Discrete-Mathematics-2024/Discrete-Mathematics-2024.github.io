@@ -27,10 +27,25 @@
         }
 
         .content-link:hover {
-            color: blue !important; /* 悬停时保持蓝色，不变色，并确保优先级 */
+            color: red !important; /* 悬停时变色，并确保优先级 */
         }
 
         .content-link:visited {
+            color: blue !important; /* 已访问的链接保持蓝色，并确保优先级 */
+        }
+
+                /* 添加一个新的类，专门用于非导航栏的链接 */
+        .content-link1 {
+      
+            text-decoration: underline !important; /* 有下划线，并确保优先级 */
+            color: blue !important; /* 设置链接颜色，并确保优先级 */
+        }
+
+        .content-link1:hover {
+            color: blue !important; /* 悬停时保持蓝色，不变色，并确保优先级 */
+        }
+
+        .content-link1:visited {
             color: blue !important; /* 已访问的链接保持蓝色，并确保优先级 */
         }
 
@@ -59,7 +74,7 @@
 
         <section id="information">
             <h2>课程信息</h2>
-            <p>授课老师：<a href="https://cs.nju.edu.cn/shiyh/index.htm" target="_blank">史颖欢</a> 副教授</p>
+            <p>授课老师：<a href="https://cs.nju.edu.cn/shiyh/index.htm" target="_blank" class="content-link1">史颖欢</a> 副教授</p>
             <p>上课时间：周一 10：10-12：00；周三 14：00-15：50；周三 18：30-20：20</p>
             <p>上课地点：馆I-201</p>
             <p>助教：</p>
@@ -110,7 +125,7 @@
         
         <section id="resources">
             <h2>资源</h2>
-            <p>[1]<a href="https://box.nju.edu.cn/f/f3d92b641090432ea396/" target="_blank">第七版</a>，仅限于课堂交流，建议购买原版，目前使用的是原书第八版。</p>
+            <p>[1]<a href="https://box.nju.edu.cn/f/f3d92b641090432ea396/" target="_blank" class="content-link1">第七版</a>，仅限于课堂交流，建议购买原版，目前使用的是原书第八版。</p>
         </section>
 
     <section id="contact">
