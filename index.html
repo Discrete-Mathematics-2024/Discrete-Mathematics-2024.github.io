@@ -19,6 +19,22 @@
             text-align: center; /* 使内容居中 */
         }
         .teacher-column { width: 30%; } /* 为“教师”列设置宽度 */
+               /* 修改超链接样式 */
+        a {
+            font-weight: bold; /* 加粗 */
+            text-decoration: underline !important; /* 有下划线，并确保优先级 */
+            color: blue !important; /* 设置链接颜色，并确保优先级 */
+        }
+
+        /* 修改超链接悬停样式 */
+        a:hover {
+            color: grey !important; /* 悬停时保持蓝色，不变色，并确保优先级 */
+        }
+
+        /* 修改已访问链接样式，确保颜色不变 */
+        a:visited {
+            color: blue !important; /* 已访问的链接保持蓝色，并确保优先级 */
+        }
 
     </style>
 </head>
@@ -125,14 +141,9 @@
                 <th>助教</th>
                 <th>邮箱</th>
                 <th>QQ</th>
-                <th>实验室</th>
+                
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+
             <tr>
                 <td></td>
                 <td></td>
