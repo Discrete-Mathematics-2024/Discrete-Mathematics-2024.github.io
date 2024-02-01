@@ -19,20 +19,18 @@
             text-align: center; /* 使内容居中 */
         }
         .teacher-column { width: 30%; } /* 为“教师”列设置宽度 */
-               /* 修改超链接样式 */
-        a {
+        /* 添加一个新的类，专门用于非导航栏的链接 */
+        .content-link {
             font-weight: bold; /* 加粗 */
             text-decoration: underline !important; /* 有下划线，并确保优先级 */
             color: blue !important; /* 设置链接颜色，并确保优先级 */
         }
 
-        /* 修改超链接悬停样式 */
-        a:hover {
-            color: grey !important; /* 悬停时保持蓝色，不变色，并确保优先级 */
+        .content-link:hover {
+            color: blue !important; /* 悬停时保持蓝色，不变色，并确保优先级 */
         }
 
-        /* 修改已访问链接样式，确保颜色不变 */
-        a:visited {
+        .content-link:visited {
             color: blue !important; /* 已访问的链接保持蓝色，并确保优先级 */
         }
 
@@ -72,7 +70,7 @@
             <h2>教学大纲</h2>
             <table>        
                 <tr><th>章节</th><th>内容</th><th>课程资源</th></tr>
-                <tr><th>〇、课程概况</th><td>1. 课程概况</td><td><a href="https://gitee.com/nju-orange/dm2024/raw/master/00_课程概况.pdf" target="_blank">上课课件</a></td></tr>
+                <tr><th>〇、课程概况</th><td>1. 课程概况</td><td><a href="https://gitee.com/nju-orange/dm2024/raw/master/00_课程概况.pdf" target="_blank" class="content-link">上课课件</a></td></tr>
                 <tr><th>一、逻辑与证明</th><td>1. 命题逻辑</td></tr>
                 <tr><td></td><td>2. 命题逻辑（续）</td></tr>
                 <tr><td></td><td>3. 谓词逻辑初步</td></tr>
@@ -107,7 +105,7 @@
         
         <section id="homeworks">
             <h2>家庭作业</h2>
-            <p>[1]<a href="https://gitee.com/nju-orange/dm2024/raw/master/homework1.pdf" target="_blank">homework-1</a>，请在<strong><font color="red">3月10日前</font></strong>提交<strong><font color="red">PDF文件</font></strong>至<a href="https://box.nju.edu.cn/u/d/5dca25d356e74d8584fb/" target="_blank">这里</a>，<strong><font color="blue">PDF文件命名为“学号-姓名-homework1.pdf”</font></strong>。</p>
+            <p>[1]<a href="https://gitee.com/nju-orange/dm2024/raw/master/homework1.pdf" target="_blank" class="content-link">homework-1</a>，请在<strong><font color="red">3月10日前</font></strong>提交<strong><font color="red">PDF文件</font></strong>至<a href="https://box.nju.edu.cn/u/d/5dca25d356e74d8584fb/" target="_blank" class="content-link">这里</a>，<strong>PDF文件命名为“学号-姓名-homework1.pdf”</strong>。</p>
         </section>
         
         <section id="resources">
